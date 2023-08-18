@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)7%q^_8))2b9=4_=f54+0#$a_k&6xmvf6%n7$%jeiigmkp$=p#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 #ALLOWED_HOSTS = ['.vercel.app']
 ALLOWED_HOSTS = ["*"]
@@ -49,7 +49,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'django.contrib.staticfiles.middleware.StaticFilesMiddleware',
 ]
 
 ROOT_URLCONF = 'CricketScore.urls'
