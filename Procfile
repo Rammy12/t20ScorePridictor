@@ -1,0 +1,1 @@
+web: gunicorn CricketScore.wsgi --log-file--
