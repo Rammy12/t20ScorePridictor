@@ -34,6 +34,7 @@
         {% if Error %}
             <h4 style="text-align: center;color: rgb(131, 245, 121);">Error: {{Error}}</h4>
         {% endif %}
+        {% csrf_token %}
         <form id="score-predictor-form" method="POST">
             {% csrf_token %}
             <label for="batting-team">Batting Team:</label>
