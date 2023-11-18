@@ -134,5 +134,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_COOKIE_SECURE = True
 # settings.py
 
-CSRF_TRUSTED_ORIGINS = ['https://t20scorepridictor-production.up.railway.app']
+#CSRF_TRUSTED_ORIGINS = ['https://t20scorepridictor-production.up.railway.app']
 
