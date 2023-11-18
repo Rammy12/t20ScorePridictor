@@ -2,11 +2,13 @@ from django.shortcuts import render
 import pickle
 import numpy as np
 import pandas as pd
+from django.views.decorators.csrf import csrf_exempt
 
 
 
 model_path_t20='model/pipet20men.pkl'
 pipe_t20=pickle.load(open(model_path_t20,'rb'))
+@csrf_exempt
 def t20_pridict(request):
     if request.method=='POST':
        batting_team=request.POST['batting_team']
